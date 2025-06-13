@@ -29,4 +29,10 @@ git clone <your-repository-url>
 cd airflow-dag-generator
 pip install -r requirements.txt
 
+requirements.txt content:
+
+python-dotenv
+requests
+Pillow
+
 
