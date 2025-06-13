@@ -24,6 +24,7 @@ Follow these steps to set up and run the DAG generator.
 
 Clone this repository and install the required Python packages:
 
+```bash
 git clone <your-repository-url>
 cd airflow-dag-generator
 pip install -r requirements.txt
