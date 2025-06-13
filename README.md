@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # 🛠️ GenAI DAG Generator
 
@@ -6,12 +5,12 @@ This Python script generates Apache Airflow DAG code from a **diagram image** us
 
 ---
 
-## 📦 Features
+##  Features
 
-- 🖼️ Encodes local DAG diagrams (`.png`) as base64.
-- 🤖 Sends the image to Azure OpenAI for analysis with a custom system prompt.
-- 🪄 Receives and extracts DAG code in JSON format.
-- 📝 Saves the DAG code to a `.py` file.
+- Encodes local DAG diagrams (`.png`) as base64.
+-  Sends the image to Azure OpenAI for analysis with a custom system prompt.
+-  Receives and extracts DAG code in JSON format.
+-  Saves the DAG code to a `.py` file.
 
 ---
 
@@ -66,7 +65,7 @@ GenAI DAG Generator/
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Place your DAG diagram image in the root folder and name it `airflow_dag_diagram.png`.
 2. Run the script:
@@ -79,7 +78,7 @@ python generatedag.py
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 - The image **must** be named `airflow_dag_diagram.png` or you must change the path in the script.
 - The OpenAI deployment must support **vision + chat**.
@@ -87,7 +86,7 @@ python generatedag.py
 
 ---
 
-## 🧠 Prompt Behavior
+##  Prompt Behavior
 
 The system prompt instructs the model to:
 - Use provider-specific operators when available (e.g., `S3ToRedshiftOperator`)
@@ -97,9 +96,7 @@ The system prompt instructs the model to:
 
 ---
 
-## ✍️ Author Tagline (Optional)
-*Turning complexity into clarity with data, automation, and AI.*
-=======
+
 # Airflow DAG Generator from Image (Vision-AI)
 
 This project leverages Azure OpenAI's Vision capabilities to generate Apache Airflow DAG (Directed Acyclic Graph) Python code directly from an image. Simply provide a diagram of your desired Airflow DAG, and the system will attempt to convert it into executable Python code.
