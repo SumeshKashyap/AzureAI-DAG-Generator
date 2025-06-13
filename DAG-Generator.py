@@ -31,7 +31,7 @@ def generate_dag_code_from_openai(encoded_image: dict, system_prompt: str, seed=
     :return: Dictionary with the generated DAG code.
     """
     load_dotenv()
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    openai_api_key = os.getenv("OPENAI_API_KEY") #Should be AzureAI Key
     openai_endpoint = os.getenv("OPENAI_API_ENDPOINT")  # Should be like "https://<resource>.openai.azure.com/openai/deployments/<deployment>/chat/completions?api-version=2024-02-15-preview"
     
 
@@ -103,7 +103,7 @@ def save_dag_code_to_file(dag_code: str, output_path: str = "generated_dag.py"):
 if __name__ == "__main__":
     print("Current Working Directory:", os.getcwd())
     # Local image path
-    local_image_path = r"C:\Users\SumeshKashyap\OneDrive - TIMETOACT GROUP\Python Scripts\GenAI DAG Generator\airflow-dag-diagram.png"  # Change as needed
+    local_image_path = r"airflow-dag-diagram.png"  # Change as needed
     base_dir = os.path.dirname(__file__)
     image_path = os.path.join(base_dir, "airflow_dag_diagram.png")
    
