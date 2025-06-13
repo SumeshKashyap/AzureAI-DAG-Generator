@@ -167,4 +167,4 @@ Read and encode your image.
 Send the encoded image and a system prompt to the Azure OpenAI Vision model.
 Extract the generated Python DAG code from the AI's response.
 Save the generated code to a file named generated_dag.py (or your specified output_path).
->>>>>>> cdbbb8891a34e7b03df823286375670460426364
+
